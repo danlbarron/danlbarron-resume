@@ -6,11 +6,11 @@ This project is designated to automate building my resume using [Node.js](https:
 First, install the dependencies:
 
 ```bash
-yarn
+npm install
 ```
 
 Run the build command and the resume will be generated in the `./build` directory from the project root directory.
 
 ```bash
-yarn build
+npm run build
 ```

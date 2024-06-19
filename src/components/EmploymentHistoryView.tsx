@@ -11,27 +11,27 @@ export interface EmploymentHistoryViewProps {
 export default function EmploymentHistoryView({ employmentHistory }: EmploymentHistoryViewProps) {
     return (
         <View style={{ marginBottom: 4 }}>
-            <H2 style={{ marginBottom: 4}}>Employment History</H2>
+            <H2 style={{ marginBottom: 4 }}>Employment History</H2>
 
             {employmentHistory.map(experience => (
                 <View key={experience.startDate}>
                     {/* DateRange    CompanyName         JobTitle */}
-                    <View style={{ flex: 1, flexDirection: 'row', fontFamily: 'Roboto', fontWeight: 'bold', fontSize: 10, marginBottom: 4, maxWidth: 500, maxHeight: 14 }}>
-                        <EmploymentDateRange
-                            startDate={experience.startDate}
-                            endDate={experience.endDate}
-                            isActiveRole={experience.isActiveRole}
-                            style={{ marginRight: 30}} />
-                        <Text>{experience.companyName}</Text>
-                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-end'}}>
-                            <Text>{experience.jobTitle}</Text>
-                        </View>
+                    <View style={{ flexDirection: 'column', fontFamily: 'Roboto', fontSize: 9, marginBottom: 4, maxWidth: 500 }}>
+                        <EmploymentDateRange style={{ fontWeight: 'medium' }}
+                                             startDate={experience.startDate}
+                                             endDate={experience.endDate} />
+                        <Text style={{ fontWeight: 'bold' }}>
+                            {experience.companyName}
+                        </Text>
+                        <Text style={{ fontWeight: 'normal', fontStyle: 'italic' }}>
+                            {experience.jobTitle}
+                        </Text>
                     </View>
 
                     {/* Description */}
-                    <View style={{ flex: 1, flexDirection: 'column', marginBottom: 2 }}>
+                    <View style={{ flexDirection: 'column', marginBottom: 2 }}>
                         {experience.description.map((description, index) => (
-                            <View key={index} style={{ flex: 1, flexDirection: 'row', fontFamily: 'Roboto', fontSize: 9, marginBottom: 2, maxHeight: '100%' }}>
+                            <View key={index} style={{ flexDirection: 'row', fontFamily: 'Roboto', fontSize: 9, marginBottom: 2 }} wrap={false}>
                                 <Text style={{ fontWeight: 'bold', marginLeft: 20, marginRight: 10 }}>•</Text>
                                 <Text style={{ fontWeight: 'light', width: 415 }}>{description}</Text>
                             </View>

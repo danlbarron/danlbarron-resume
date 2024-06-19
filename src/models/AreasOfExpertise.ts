@@ -1,6 +1,7 @@
 export default interface AreasOfExpertise {
-    readonly languagesAndTools: ReadonlyArray<string>;
-    readonly technologies: ReadonlyArray<string>;
-    readonly teamCollaborationTools: ReadonlyArray<string>;
+    readonly programmingLanguages: ReadonlyArray<string>;
+    readonly frameworksAndLibraries: ReadonlyArray<string>;
+    readonly tools: ReadonlyArray<string>;
     readonly platforms: ReadonlyArray<string>;
+    readonly methodologies: ReadonlyArray<string>;
 }

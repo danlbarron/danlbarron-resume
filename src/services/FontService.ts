@@ -23,11 +23,11 @@ export function registerFonts() {
                 fontWeight: 'bold',
                 src: 'https://github.com/googlefonts/roboto/raw/main/src/hinted/Roboto-Bold.ttf'
             },
-            // {
-            //     fontStyle: 'italic',
-            //     fontWeight: 'normal',
-            //     src: 'https://github.com/googlefonts/roboto/raw/main/src/hinted/Roboto-Italic.ttf'
-            // },
+            {
+                fontStyle: 'italic',
+                fontWeight: 'normal',
+                src: 'https://github.com/googlefonts/roboto/raw/main/src/hinted/Roboto-Italic.ttf'
+            },
             // {
             //     fontStyle: 'italic',
             //     fontWeight: 'light',

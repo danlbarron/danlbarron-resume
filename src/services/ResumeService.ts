@@ -7,102 +7,107 @@ const resume: Resume = {
     firstName: 'Danl',
     lastName: 'Barron',
     title: 'Senior Software Developer',
-    objective: 'Software developer and someone who loves building things. My knowledge and experiences towards solving problems will be an essential part of both your team and your software.',
+    professionalSummary: 'Experienced senior software developer with a strong background in architecting and delivering scalable solutions across diverse industries. Skilled in a wide range of technologies including .NET, Vue, React, and modern web frameworks. Proven track record in leading teams, providing technical direction, and achieving client objectives through innovative software solutions.',
     areasOfExpertise: {
-        languagesAndTools: [
+        programmingLanguages: [
             'C#',
             'JavaScript',
             'Typescript',
+            'Python',
+            'SQL',
             'HTML',
             'CSS',
             'Less',
             'Sass',
-            'SQL',
-            'Python',
-            'Visual Studio',
-            'JetBrains Rider',
-            'Webstorm',
-            'Command-line interface (Batch, Bash, PowerShell)'
+            'Bash',
+            'Zsh',
+            'PowerShell'
         ],
-        technologies: [
+        frameworksAndLibraries: [
             '.NET',
             'Node.js',
             'ASP.NET',
             'Web API',
             'MVC',
+            'Xamarin',
+            '.NET MAUI',
             'SignalR',
             'React',
-            'React Router',
             'Next.js',
+            'Vue.js',
+            'Nuxt',
             'Express',
             'Entity Framework',
-            'SQL Server',
-            'Identity Server',
             'OpenID Connect',
             'OAuth 2.0',
-            'Bootstrap',
             'Tailwind CSS'
         ],
-        teamCollaborationTools: [
+        tools: [
+            'Visual Studio',
+            'JetBrains Rider',
+            'Webstorm',
+            'Git'
+        ],
+        platforms: [
+            'Azure',
+            'Amazon Web Services',
+            'DigitalOcean',
+            'Heroku',
+            'Auth0',
+            'Microsoft SQL Server',
+        ],
+        methodologies: [
             'Agile',
             'Scrum',
             'Kanban',
-            'Git',
-            'Team Foundation Services'
-        ],
-        platforms: [
-            'Windows',
-            'Mac OS X',
-            'Linux',
-            'Azure',
-            'Amazon Web Services',
-            'DigitalOcean'
+            'CI/CD'
         ]
     },
     employmentHistory: [{
-        companyName: 'Self-Employed',
-        jobTitle: 'Senior Software Developer',
-        startDate: '2018-03-01T00:00:00',
-        endDate: '',
-        isActiveRole: true,
+        companyName: 'DBarron Consulting, LLC',
+        jobTitle: 'Managing Member / Software Consultant',
+        startDate: '2021-05-04T00:00:00',
         description: [
-            'Provided expert consulting and development services to several medium to large-scale businesses. Typical projects included upgrading vital legacy projects to newer up-to-date web-based technologies.',
-            'Provided technical direction on core technologies, domain-driven designs, architectures, and design patterns. Directly engaged various teams through training, pair-programming and code-reviews.',
-            'Projects utilized various technologies including, but not limited to .NET Core, ASP.NET Core, SignalR, SQL Server, React, Next.js, Node.js, Laravel, PHP, MySQL, OAuth 2.0, and more.'
+            'Led consulting engagements for medium to large-scale businesses, specializing in software architecture and senior development roles.',
+            'Delivered solutions across financial, medical, and HR sectors using technologies such as .NET Core, Azure, Xamarin / .NET MAUI, Vue, and Nuxt.',
+            'Provided technical guidance, training, and mentorship to teams, enhancing development practices and project outcomes.'
+        ]
+    }, {
+        companyName: 'Self-Employed',
+        jobTitle: 'Software Consultant',
+        startDate: '2018-03-01T00:00:00',
+        endDate: '2021-05-04T00:00:00',
+        description: [
+            'Upgraded legacy systems to modern web technologies for various clients, utilizing ASP.NET Core, React, Next.js, Xamarin, and SQL Server.',
+            'Directed technical strategies, implemented domain-driven designs, and fostered team collaboration through pair programming and code reviews.',
         ]
     }, {
         companyName: 'PNI Digital Media Ltd.',
         jobTitle: 'Senior Back-End Developer',
         startDate: '2015-03-01T00:00:00',
         endDate: '2018-03-01T00:00:00',
-        isActiveRole: false,
         description: [
-            'Developed, delivered, and maintained several large-scale business solutions for Staples Copy & Print.',
-            'Contributions involved server-side API development, utilizing data-warehousing with high-transaction throughput and domain-driven design. Directly mentored and cross-trained team on new technologies and design patterns, via ongoing pair-programming and peer code reviews.',
-            'Projects utilized various technologies including, but not limited to C#, ASP.NET Web API, MVC, SignalR, Azure, OpenID Connect 1.0, Entity Framework, LINQ, Microsoft SQL Server.'
+            'Developed and maintained large-scale solutions for Staples Copy & Print, focusing on API development and high-transaction data warehousing.',
+            'Mentored teams on modern technologies and design patterns, improving development efficiency and product quality.',
+            'Utilized various technologies including, but not limited to C#, ASP.NET Web API, SignalR, Azure, OpenID Connect 1.0, Entity Framework, LINQ, Microsoft SQL Server.'
         ]
     }, {
         companyName: 'Self-Employed',
         jobTitle: 'Software Consultant',
         startDate: '2011-04-01T00:00:00',
         endDate: '2015-02-01T00:00:00',
-        isActiveRole: false,
         description: [
-            'Provided software consulting and development services utilizing the latest in Microsoft web and open-source technologies.',
-            'Primary responsibilities involved providing technical guidance via best practices and critical system-analysis. Directly engaged teams though cross-training, pair programming, CI/CD, unit-testing, and code reviews.',
-            'Projects utilized various technologies including, but not limited to ASP.NET MVC, Web API, WCF Web Services, XAML, WinForms, Entity Framework, SQL Server, AngularJS, Bootstrap, jQuery, and KnockoutJS.'
+            'Provided consulting services using Microsoft and open-source technologies, advising on best practices and system analysis.',
+            'Facilitated team training through pair programming, CI/CD, and code reviews, utilizing ASP.NET MVC, AngularJS, and SQL Server.',
         ]
     }, {
         companyName: 'Multimedia Games (MGAM)',
         jobTitle: 'Software Developer II',
         startDate: '2008-09-01T00:00:00',
         endDate: '2011-03-01T00:00:00',
-        isActiveRole: false,
         description: [
-            '09/10 - 03/11: Promoted to Software Developer II. Worked closely with Project Support and QA to reduce frequency of trouble tickets and bug reports. Duties involved development of internal QA tooling and automated testing of software systems, interacting with hardware device integration.',
-            '09/09 - 09/10: Promoted to Product Support Engineer. Primary responsibilities involved providing Level 2 technical support for MGAM’s software product lines, system analysis, diagnostics, root-cause and occasionally teaming up with project management, developers, and other members of product support.',
-            '09/08 - 09/09: Joined as Jr. Software/Database Developer. Contributions ranged from back-end casino/bingo systems, kiosks, WinCE point-of-sale systems, and internal tools for several of MGAM’s product lines.',
-            'Technologies utilized: C#, C++, .NET Framework, Microsoft SQL Server, WinForms, and SOAP Web Services'
+            'Promoted through roles including Jr. Software/Database Developer, Product Support Engineer, and Software Developer II, contributing to casino and bingo systems.',
+            'Developed internal tools and automated testing solutions, integrating hardware devices and reducing software issues.'
         ]
     }],
     education: [{
@@ -122,8 +127,8 @@ export function getTitle(): string {
     return resume.title;
 }
 
-export function getObjective(): string {
-    return resume.objective;
+export function getProfessionalSummary(): string {
+    return resume.professionalSummary;
 }
 
 export function getAreasOfExpertise(): Readonly<AreasOfExpertise> {

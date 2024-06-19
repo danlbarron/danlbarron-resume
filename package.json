@@ -1,21 +1,20 @@
 {
   "name": "danlbarron-resume",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@react-pdf/renderer": "^1.6.13",
-    "date-fns": "^2.19.0",
-    "react": "^17.0.1"
+    "@react-pdf/renderer": "^3.4.4",
+    "date-fns": "^3.6.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.10",
-    "@babel/core": "^7.13.10",
-    "@babel/preset-env": "^7.13.10",
-    "@babel/preset-react": "^7.12.13",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/node": "^14.14.34",
-    "@types/react": "^17.0.3"
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/node": "^14.18.63",
+    "@types/react": "^18.3.1"
   },
   "scripts": {
     "build": "babel src --out-dir dist --extensions \".ts\",\".tsx\" && node dist/index.js"

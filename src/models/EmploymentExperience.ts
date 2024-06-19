@@ -3,7 +3,6 @@ export default interface EmploymentExperience {
     readonly jobTitle: string;
     readonly location?: string;
     readonly startDate: string;
-    readonly endDate: string;
-    readonly isActiveRole: boolean;
+    readonly endDate?: string;
     readonly description: ReadonlyArray<string>;
 }

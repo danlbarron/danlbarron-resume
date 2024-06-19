@@ -6,7 +6,7 @@ export default interface Resume {
     readonly firstName: string;
     readonly lastName: string;
     readonly title: string;
-    readonly objective: string;
+    readonly professionalSummary: string;
     readonly areasOfExpertise: Readonly<AreasOfExpertise>;
     readonly employmentHistory: ReadonlyArray<Readonly<EmploymentExperience>>;
     readonly education: ReadonlyArray<Readonly<Education>>;

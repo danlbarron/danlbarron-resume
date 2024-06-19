@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync } from 'fs';
 import path from 'path';
-import { getFullName, getTitle, getObjective, getAreasOfExpertise, getEmploymentHistory, getEducation } from './services/ResumeService';
+import { getFullName, getTitle, getProfessionalSummary, getAreasOfExpertise, getEmploymentHistory, getEducation } from './services/ResumeService';
 
 import React from 'react';
 import ReactPDF from '@react-pdf/renderer';
@@ -19,7 +19,7 @@ const filePath = `${buildDir}/${fullName} - Resume.pdf`;
 const resumeProps = {
     fullName,
     title: getTitle(),
-    objective: getObjective(),
+    professionalSummary: getProfessionalSummary(),
     areasOfExpertise: getAreasOfExpertise(),
     employmentHistory: getEmploymentHistory(),
     education: getEducation()

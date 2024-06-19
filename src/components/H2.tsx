@@ -1,17 +1,17 @@
-import type ReactPDF from '@react-pdf/renderer';
+import type { Style } from '@react-pdf/types';
 
 import { Text } from '@react-pdf/renderer';
 
 export interface H2Props {
     children: Readonly<React.ReactNode>;
-    style?: Readonly<ReactPDF.Style>;
+    style?: Readonly<Style>;
 }
 
 export default function H2({ children, style }: H2Props) {
-    const textStyle: ReactPDF.Style = {
+    const textStyle: Style = {
         fontFamily: 'Roboto',
         fontWeight: 'bold',
-        fontSize: 12,
+        fontSize: 11,
         textTransform: 'uppercase'
     };
     const styleProps = style ? [textStyle, style] : textStyle;

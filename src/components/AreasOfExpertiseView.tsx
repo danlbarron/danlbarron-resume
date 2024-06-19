@@ -2,7 +2,6 @@ import type AreasOfExpertise from '../models/AreasOfExpertise';
 
 import { Text, View } from '@react-pdf/renderer';
 import H2 from './H2';
-import H3 from './H3';
 
 export interface AreasOfExpertiseViewProps {
     areasOfExpertise: Readonly<AreasOfExpertise>;
@@ -10,29 +9,21 @@ export interface AreasOfExpertiseViewProps {
 
 export default function AreasOfExpertiseView({ areasOfExpertise }: AreasOfExpertiseViewProps) {
     return (
-        <View style={{ marginBottom: 4 }}>
+        <View style={{ flexDirection: 'column', marginBottom: 4 }}>
             <H2 style={{marginBottom: 4}}>Areas Of Expertise</H2>
-            <View style={{ marginLeft: 30 }}>
-                <ExpertiseHeader>Languages and Tools</ExpertiseHeader>
-                <ExpertiseItems>{areasOfExpertise.languagesAndTools.join(', ')}</ExpertiseItems>
-
-                <ExpertiseHeader>Technologies</ExpertiseHeader>
-                <ExpertiseItems>{areasOfExpertise.technologies.join(', ')}</ExpertiseItems>
-
-                <ExpertiseHeader>Team Collaboration Tools</ExpertiseHeader>
-                <ExpertiseItems>{areasOfExpertise.teamCollaborationTools.join(', ')}</ExpertiseItems>
-
-                <ExpertiseHeader>Operating Systems and Platforms</ExpertiseHeader>
-                <ExpertiseItems isLastItem={true}>{areasOfExpertise.platforms.join(', ')}</ExpertiseItems>
-            </View>
+            <ExpertiseList title='Programming Languages'>{areasOfExpertise.programmingLanguages.join(', ')}</ExpertiseList>
+            <ExpertiseList title='Frameworks & Libraries'>{areasOfExpertise.frameworksAndLibraries.join(', ')}</ExpertiseList>
+            <ExpertiseList title='Tools & Platforms'>{areasOfExpertise.tools.concat(areasOfExpertise.platforms).join(', ')}</ExpertiseList>
+            <ExpertiseList title='Methodologies' isLastItem={true}>{areasOfExpertise.methodologies.join(', ')}</ExpertiseList>
         </View>
     );
 }
 
-function ExpertiseHeader({ children }: { children: React.ReactNode }) {
-    return (<H3 style={{ marginBottom: 2 }}>{children}</H3>);
-}
-
-function ExpertiseItems({ children, isLastItem }: { children: React.ReactNode, isLastItem?: boolean }) {
-    return (<Text style={{ fontFamily: 'Roboto', fontWeight: 'light', fontSize: 9, marginBottom: isLastItem ? 0 : 3 }}>{children}</Text>);
+function ExpertiseList({ title, children, isLastItem }: { title: string, children: React.ReactNode, isLastItem?: boolean }) {
+    return (
+        <View style={{ flexDirection: 'row', fontFamily: 'Roboto', fontSize: 9 }}>
+            <Text style={{ fontWeight: 'bold', marginLeft: 20, marginRight: 3 }}>{title}:</Text>
+            <Text style={{ fontWeight: 'light', maxWidth: 358, marginBottom: isLastItem ? 0 : 3 }}>{children}</Text>
+        </View>
+    );
 }
