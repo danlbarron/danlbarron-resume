@@ -14,7 +14,7 @@ if (!existsSync(buildDir)) {
 }
 
 const fullName = getFullName();
-const filePath = `${buildDir}/${fullName} - Resume.pdf`;
+const filePath = `${buildDir}/${fullName.replace(' ', '')}-Resume.pdf`;
 
 const resumeProps = {
     fullName,

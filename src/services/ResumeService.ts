@@ -65,7 +65,7 @@ const resume: Resume = {
     },
     employmentHistory: [{
         companyName: 'DBarron Consulting, LLC',
-        jobTitle: 'Managing Member / Software Consultant',
+        jobTitle: 'Software Consultant / Managing Member',
         startDate: '2021-05-04T00:00:00',
         description: [
             'Led consulting engagements for medium to large-scale businesses, specializing in software architecture and senior development roles.',
