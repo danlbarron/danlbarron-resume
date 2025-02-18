@@ -33,7 +33,7 @@ export default function EmploymentHistoryView({ employmentHistory }: EmploymentH
                         {experience.description.map((description, index) => (
                             <View key={index} style={{ flexDirection: 'row', fontFamily: 'Roboto', fontSize: 9, marginBottom: 2 }} wrap={false}>
                                 <Text style={{ fontWeight: 'bold', marginLeft: 20, marginRight: 10 }}>•</Text>
-                                <Text style={{ fontWeight: 'light', width: 415 }}>{description}</Text>
+                                <Text style={{ fontWeight: 'light', width: 415 }}>{description.split('')}</Text>
                             </View>
                         ))}
                     </View>

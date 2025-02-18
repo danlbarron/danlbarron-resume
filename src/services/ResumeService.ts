@@ -46,15 +46,15 @@ const resume: Resume = {
             'Visual Studio',
             'JetBrains Rider',
             'Webstorm',
+            'Docker',
             'Git',
-            'Docker'
         ],
         platforms: [
             'Azure',
             'Amazon Web Services',
-            'DigitalOcean',
             'GitLab',
             'Heroku',
+            'DigitalOcean',
             'Auth0',
             'Microsoft SQL Server',
         ],
