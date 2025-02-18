@@ -46,12 +46,14 @@ const resume: Resume = {
             'Visual Studio',
             'JetBrains Rider',
             'Webstorm',
-            'Git'
+            'Git',
+            'Docker'
         ],
         platforms: [
             'Azure',
             'Amazon Web Services',
             'DigitalOcean',
+            'GitLab',
             'Heroku',
             'Auth0',
             'Microsoft SQL Server',
@@ -68,7 +70,7 @@ const resume: Resume = {
         jobTitle: 'Software Consultant / Managing Member',
         startDate: '2021-05-04T00:00:00',
         description: [
-            'Led consulting engagements for medium to large-scale businesses, specializing in software architecture and senior development roles.',
+            'Led consulting engagements for various businesses, specializing in software architecture and senior development roles.',
             'Delivered solutions across financial, medical, and HR sectors using technologies such as .NET Core, Azure, Xamarin / .NET MAUI, Vue, and Nuxt.',
             'Provided technical guidance, training, and mentorship to teams, enhancing development practices and project outcomes.'
         ]
